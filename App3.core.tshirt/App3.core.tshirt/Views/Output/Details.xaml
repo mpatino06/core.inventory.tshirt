@@ -1,0 +1,154 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.core.tshirt.Views.Output.Details" 
+			 BackgroundColor="{StaticResource BackgroundPhone}"
+             x:Name="PageOutputDetail"
+              NavigationPage.HasNavigationBar="False">
+	<ScrollView>
+		<StackLayout>
+			<Grid  BackgroundColor="{StaticResource TextColor}" Margin="0,0.333,0,0">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="45" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="65" />
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="45"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+
+				<Image WidthRequest="35" Grid.Row="0" Grid.Column="0"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Source="Images/exitItem.png" Margin="5"></Image>
+				<Label x:Name="EntProveedor" Text="Salida a Producción" Grid.Row="0" FontSize="14"  Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" FontAttributes="Bold"></Label>
+				<Image WidthRequest="35" Grid.Row="0" Grid.Column="2"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Source="Images/Menu.png" >
+					<Image.GestureRecognizers>
+						<TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped"/>
+					</Image.GestureRecognizers>
+				</Image>
+				<Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" BackgroundColor="{StaticResource BackgroundPhone}"  VerticalOptions="Center">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="45" />
+						<ColumnDefinition Width="100" />
+						<ColumnDefinition Width="255" />
+						<ColumnDefinition Width="*" />
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="10"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+					</Grid.RowDefinitions>
+
+
+					<Grid Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="3">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="100" />
+							<ColumnDefinition Width="*" />
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto"/>
+							<RowDefinition Height="Auto"/>
+
+						</Grid.RowDefinitions>
+
+						<Label Grid.Row="0" Grid.Column="0" Text="Nro Pedido" HorizontalOptions="Start" VerticalOptions="Center" TextColor="{StaticResource TextColor}" FontAttributes="Bold" FontSize="14"/>
+						<Label Grid.Row="0" Grid.Column="1" Text="{Binding Order}" VerticalOptions="Center" HorizontalOptions="Start" TextColor="Black" FontSize="12" />
+
+						<Label Grid.Row="1" Grid.Column="0" Text="Fecha" VerticalOptions="Center" HorizontalOptions="Start"  FontAttributes="Bold" TextColor="{StaticResource TextColor}" FontSize="14"/>
+						<Label Grid.Row="1" Grid.Column="1" Text="{Binding DateCreated}" VerticalOptions="Center" HorizontalOptions="Start" TextColor="Black" FontSize="12" />
+
+
+					</Grid>
+
+					<Label Grid.Row="2" Grid.Column="1" Text="Productos" VerticalOptions="Center" HorizontalOptions="Start"  FontAttributes="Bold" TextColor="{StaticResource TextColor}" FontSize="14"/>
+
+					<Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,5,0,0"  BackgroundColor="{StaticResource BackgroundPhone}" HorizontalOptions="Center">
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto"/>
+							<RowDefinition Height="Auto"/>
+							<RowDefinition Height="Auto"/>
+						</Grid.RowDefinitions>
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="Auto" />
+						</Grid.ColumnDefinitions>
+						<ListView 
+                x:Name="ProductListView"
+                Grid.Row="0" Grid.Column="0"  
+                BackgroundColor="{StaticResource BackgroundPhone}"
+                ItemsSource="{Binding ProductsCollection, Mode=TwoWay}" 
+                HasUnevenRows="True"  
+                HorizontalOptions="Center" 
+                VerticalOptions="Start" 
+                SeparatorVisibility="Default"
+                HeightRequest="{Binding HeightList}">
+							<ListView.ItemTemplate>
+								<DataTemplate>
+									<ViewCell>
+										<Grid Padding="5" HorizontalOptions="Start" VerticalOptions="Center" BackgroundColor="{StaticResource BackgroundPhone}">
+											<Grid.ColumnDefinitions>
+												<ColumnDefinition Width="8*" />
+												<!--<ColumnDefinition Width="2*" />
+                                                <ColumnDefinition Width="3*" />-->
+												<ColumnDefinition Width="2*" />
+											</Grid.ColumnDefinitions>
+											<Grid.RowDefinitions>
+												<RowDefinition Height="Auto"/>
+											</Grid.RowDefinitions>
+
+											<Label 
+                        Grid.Column="0" 
+                        Text="{Binding ConcatTrannsaction}" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" 
+                        FontSize="12"
+                        TextColor="Black"/>
+
+											<!--<Label 
+                        Grid.Column="1" 
+                        Text="{Binding ProductCode}" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" 
+                        FontSize="14"
+                        TextColor="Black"/>
+
+                                            <Label 
+                        Grid.Column="2" 
+                        Text="{Binding ProductDescription}" 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center" 
+                        FontSize="14"
+                        TextColor="Black"/>-->
+
+											<Label
+                        Grid.Column="1"
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        Text="{Binding Quantity}"
+                        FontSize="14"
+                        FontAttributes="Bold"
+                        TextColor="{StaticResource TextColor}">
+											</Label>
+										</Grid>
+									</ViewCell>
+								</DataTemplate>
+							</ListView.ItemTemplate>
+						</ListView>
+
+						<Label x:Name="LblObservation"  Text="Observación" Margin="5,0,0,0" Grid.Row="1" Grid.Column="0"  FontSize="14"  HorizontalOptions="Start" VerticalOptions="Center" TextColor="{StaticResource TextColor}" FontAttributes="Bold" ></Label>
+
+						<Label Grid.Row="2" Grid.Column="0" Margin="10,0,0,0" Text="{Binding Observation}" VerticalOptions="Start" HorizontalOptions="StartAndExpand"  FontSize="12"/>
+
+					</Grid>
+
+					<Button x:Name="btnVolver" Grid.Row="4" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,10,0,0"
+                        Style="{StaticResource ButtonTShirt}" Text="Volver" WidthRequest="110"    
+                        VerticalOptions="CenterAndExpand" Clicked="ButtonBackClick" >
+					</Button>
+
+				</Grid>
+
+			</Grid>
+		</StackLayout>
+	</ScrollView>
+</ContentPage>

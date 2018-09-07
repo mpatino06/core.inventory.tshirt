@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.core.tshirt.Views.Count.PlanResume"
+			 BackgroundColor="{StaticResource BackgroundPhone}"
+             NavigationPage.HasNavigationBar="False">
+	<ScrollView>
+		<StackLayout>
+			<Grid  BackgroundColor="{StaticResource TextColor}" Margin="0,0.333,0,594.667">
+				<Grid.ColumnDefinitions>
+					<ColumnDefinition Width="45" />
+					<ColumnDefinition Width="*" />
+					<ColumnDefinition Width="65" />
+				</Grid.ColumnDefinitions>
+				<Grid.RowDefinitions>
+					<RowDefinition Height="45"/>
+					<RowDefinition Height="Auto"/>
+				</Grid.RowDefinitions>
+
+				<Image WidthRequest="35" Grid.Row="0" Grid.Column="0"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Source="conteo.png" Margin="5"></Image>
+				<Label x:Name="EntProveedor" Text="{Binding PlanName}" Grid.Row="0" FontSize="14"  Grid.Column="1"  HorizontalOptions="Start" VerticalOptions="Center" FontAttributes="Bold" ></Label>
+				<Image WidthRequest="35" Grid.Row="0" Grid.Column="2"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Start" Source="menuback.png.png" >
+					<Image.GestureRecognizers>
+						<TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped"/>
+					</Image.GestureRecognizers>
+				</Image>
+
+				<Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,0,0,0.167" BackgroundColor="{StaticResource BackgroundPhone}" HorizontalOptions="FillAndExpand" VerticalOptions="Center">
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="Auto" />
+						<ColumnDefinition Width="45" />
+						<ColumnDefinition Width="Auto" />
+					</Grid.ColumnDefinitions>
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+						<RowDefinition Height="Auto"/>
+					</Grid.RowDefinitions>
+
+
+
+					<Image Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3" Margin="0,20,0,0" 
+                        WidthRequest="80" HeightRequest="80" 
+                        VerticalOptions="Center" HorizontalOptions="Center" 
+                        Source="{Binding ImageStatusPlan}" ></Image>
+
+					<ListView 
+                         x:Name="OrderListView"
+                        Margin="0,20,0,0"  Grid.Row="1" Grid.Column="0" BackgroundColor="{StaticResource BackgroundPhone}"
+                    ItemsSource="{Binding Details}"
+                    HasUnevenRows="True"  
+                      HorizontalOptions="Fill" VerticalOptions="Center" HeightRequest="{Binding HeightList}">
+						<ListView.ItemTemplate>
+							<DataTemplate>
+								<ViewCell>
+									<StackLayout BackgroundColor="#eee"
+                        Orientation="Vertical">
+										<!--<ViewCell.View>-->
+										<Grid Padding="10" HorizontalOptions="Center" VerticalOptions="Center" BackgroundColor="{StaticResource BackgroundPhone}">
+											<Grid.ColumnDefinitions>
+												<ColumnDefinition Width="3*" />
+												<ColumnDefinition Width="6*" />
+												<ColumnDefinition Width="1*" />
+											</Grid.ColumnDefinitions>
+											<Grid.RowDefinitions>
+												<RowDefinition Height="Auto"/>
+											</Grid.RowDefinitions>
+
+											<Label
+                                            Grid.Row="0" Grid.Column="0"
+                                            VerticalOptions="Center"
+                                            HorizontalOptions="Start"
+                                            Text="{Binding ProductCode}"
+                                            FontSize="10"
+                                            TextColor="Black" />
+
+											<Label Grid.Row="0" Grid.Column="1" 
+                                            Text="{Binding ProductDescription}" 
+                                            VerticalOptions="Center" 
+                                            HorizontalOptions="Start" 
+                                            FontSize="9"
+                                            TextColor="Black" />
+
+											<Label Grid.Row="0" Grid.Column="2"                                         
+                                            Text="{Binding TotalProduct}" 
+                                            VerticalOptions="Center" 
+                                            HorizontalOptions="Start"  
+                                            FontSize="10"
+                                            TextColor="{Binding RColor}" 
+                                            FontAttributes="Bold" />
+										</Grid>
+										<!--</ViewCell.View>-->
+									</StackLayout>
+
+								</ViewCell>
+							</DataTemplate>
+						</ListView.ItemTemplate>
+					</ListView>
+
+
+					<!-- Paginacion -->
+					<Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="3" VerticalOptions="Center" HorizontalOptions="Fill" IsVisible="{Binding IsPage}">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="1.5*" />
+							<ColumnDefinition Width="2*" />
+							<ColumnDefinition Width="3*" />
+							<ColumnDefinition Width="2*" />
+							<ColumnDefinition Width="1.5*" />
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto"/>
+						</Grid.RowDefinitions>
+
+						<Image x:Name="Lblprevpage" WidthRequest="35" Grid.Row="0" Grid.Column="1"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="End" Source="Images/prev.png" >
+							<Image.GestureRecognizers>
+								<TapGestureRecognizer Command="{Binding PrevPage}" />
+							</Image.GestureRecognizers>
+						</Image>
+						<Label x:Name="Lblmsgpage" Grid.Row="0" Grid.Column="2" FontSize="14" FontAttributes="Bold" Text="{Binding MsgPage, Mode=TwoWay}" TextColor="{StaticResource TextColor}" HorizontalOptions="CenterAndExpand"></Label>
+						<Image x:Name="Lblnextpage" WidthRequest="35" Grid.Row="0" Grid.Column="3"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Start" Source="Images/next.png" >
+							<Image.GestureRecognizers>
+								<TapGestureRecognizer Command="{Binding NextPage}" />
+							</Image.GestureRecognizers>
+						</Image>
+
+					</Grid>
+					<!-- -->
+
+					<Grid Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="3"  BackgroundColor="{StaticResource BackgroundPhone}" Margin="0,0.333,0,594.667" HorizontalOptions="Fill">
+						<Grid.ColumnDefinitions>
+							<ColumnDefinition Width="45" />
+							<ColumnDefinition Width="*" />
+							<ColumnDefinition Width="65" />
+						</Grid.ColumnDefinitions>
+						<Grid.RowDefinitions>
+							<RowDefinition Height="Auto"/>
+							<RowDefinition Height="Auto"/>
+						</Grid.RowDefinitions>
+
+						<!--<Image WidthRequest="35" Grid.Row="0" Grid.Column="0" Margin="0,20,0,0" HeightRequest="35" VerticalOptions="Center" HorizontalOptions="End" Source="@drawable/Lote.png" ></Image>
+                        <Entry x:Name="EntLote" Grid.Row="0"  Grid.Column="1"  Text="{Binding Lote}" Placeholder="Lote" WidthRequest="200" HeightRequest="40" HorizontalOptions="Start"></Entry>-->
+						<Button x:Name="EntSave" Text="Guardar" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"  Margin="0,10,0,0" VerticalOptions="Center" HorizontalOptions="Center"  WidthRequest="200" Style="{StaticResource ButtonTShirt}" Command="{Binding SavePlan}"></Button>
+
+					</Grid>
+
+				</Grid>
+
+
+
+			</Grid>
+
+		</StackLayout>
+	</ScrollView>
+</ContentPage>

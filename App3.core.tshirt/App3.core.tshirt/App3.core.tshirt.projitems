@@ -1,0 +1,255 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>6cbef2f7-7c29-48dc-83ae-fd2d651ae2c6</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>App3.core.tshirt</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Controls\BindablePicker.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Infrastructure\EnumTShirt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
+      <DependentUpon>MainPage.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CountPlan.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CountPlanDetail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\CountPlanDetailItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OrderDetail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OrderDetailExtend.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OrderDetailProduct.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OrderReqDetailExtend.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OrderReqExtend.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OrderTShirt.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Output.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\OutputDetail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Product.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ProductToTransfer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ProductTransfer.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ProductTransferDetailExtend.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Provider.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\RctExtendModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\TransferDetail.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewCountPlanDetailExtend.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewCountPlanDetailItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewCountPlanDetailPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\WarehouseProduct.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\CountServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\OrderService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ProductChangeServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ProductServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ProductTransferServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\ProviderService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\RctServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\SyncServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\UserServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\WarehouseServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CountDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CountResumeViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CountViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\MenuItemViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\OrderDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\OrderProviderViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\OrderReqAddViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\OrderReqDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\OrderViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\OutputDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\OutputProductsViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\ProductTransferDetailViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\RctViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SearchOrderReqViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SearchOutputViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SearchProductChangeViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SearchProductTransferViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\SearchProviderOrderViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\WarehouseProductTransferViewModel.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Change\Add.xaml.cs">
+      <DependentUpon>Add.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Change\ClientProduct.xaml.cs">
+      <DependentUpon>ClientProduct.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Change\DetailChangeP.xaml.cs">
+      <DependentUpon>DetailChangeP.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Change\ListChange.xaml.cs">
+      <DependentUpon>ListChange.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Change\ResultChangeP.xaml.cs">
+      <DependentUpon>ResultChangeP.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Change\SubMenuChangeP.xaml.cs">
+      <DependentUpon>SubMenuChangeP.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Count\Plan.xaml.cs">
+      <DependentUpon>Plan.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Count\PlanDetails.xaml.cs">
+      <DependentUpon>PlanDetails.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Count\PlanList.xaml.cs">
+      <DependentUpon>PlanList.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Count\PlanResume.xaml.cs">
+      <DependentUpon>PlanResume.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\User.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ViewOrder.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Warehouse.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Views\MainMenu.xaml.cs">
+      <DependentUpon>MainMenu.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Output\Details.xaml.cs">
+      <DependentUpon>Details.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Reception\OderList.xaml.cs">
+      <DependentUpon>OderList.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Reception\OrderPage.xaml.cs">
+      <DependentUpon>OrderPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Reception\ProductDetail.xaml.cs">
+      <DependentUpon>ProductDetail.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Reception\Rct.xaml.cs">
+      <DependentUpon>Rct.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Reception\Search.xaml.cs">
+      <DependentUpon>Search.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Count\Plan.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\MainMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Count\PlanList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Count\PlanDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Count\PlanResume.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Change\DetailChangeP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Change\SubMenuChangeP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Change\ResultChangeP.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Change\Add.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Change\ClientProduct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Change\ListChange.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Reception\OderList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Reception\Search.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Reception\OrderPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Reception\ProductDetail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Reception\Rct.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Output\Details.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+</Project>
