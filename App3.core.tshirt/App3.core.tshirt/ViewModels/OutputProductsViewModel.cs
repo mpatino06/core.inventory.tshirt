@@ -6,11 +6,11 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows.Input;
-using App.Mobile.Droid.Models;
-using App.Mobile.Droid.Services;
 using GalaSoft.MvvmLight.Command;
-using App.Mobile.Droid.Infrastructure;
 using Xamarin.Forms;
+using App3.core.tshirt.Models;
+using App3.core.tshirt.Services;
+using App3.core.tshirt.Infrastructure;
 
 namespace App3.core.tshirt.ViewModels
 {
@@ -251,7 +251,7 @@ namespace App3.core.tshirt.ViewModels
                     {
                         string id = string.Concat("00", result.Id.ToString());
                         id = id.Substring(id.Length - 3);
-                        await Application.Current.MainPage.Navigation.PushAsync(new Pages.Output.ResultOutput(id));
+                        await Application.Current.MainPage.Navigation.PushAsync(new Views.Output.ResultOutput(id));
                     }
                     else
                     {
@@ -276,7 +276,7 @@ namespace App3.core.tshirt.ViewModels
             resetProduct();
             OutputProductCollection = new ObservableCollection<OutputDetail>();
             WarehouseOriginSelect = string.Empty;
-            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Output.SubMenuOutput());
+            Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Views.Output.SubMenuOutput());
         }
 
         #endregion

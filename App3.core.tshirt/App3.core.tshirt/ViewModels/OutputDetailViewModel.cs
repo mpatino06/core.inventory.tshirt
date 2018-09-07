@@ -5,10 +5,9 @@ using System.ComponentModel;
 using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
-using App.Mobile.Droid.Models;
-using App.Mobile.Droid.Services;
-using App.Mobile.Droid.Infrastructure;
-
+using App3.core.tshirt.Services;
+using App3.core.tshirt.Models;
+using App3.core.tshirt.Infrastructure;
 
 namespace App3.core.tshirt.ViewModels
 {

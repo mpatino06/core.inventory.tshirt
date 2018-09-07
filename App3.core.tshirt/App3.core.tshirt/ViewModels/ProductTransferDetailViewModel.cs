@@ -4,9 +4,9 @@ using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
-using App.Mobile.Droid.Models;
-using App.Mobile.Droid.Infrastructure;
-using App.Mobile.Droid.Services;
+using App3.core.tshirt.Infrastructure;
+using App3.core.tshirt.Models;
+using App3.core.tshirt.Services;
 
 namespace App3.core.tshirt.ViewModels
 {

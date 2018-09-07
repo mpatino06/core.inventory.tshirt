@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App3.core.tshirt.Views.Reception.OrderPage"  
 			 xmlns:b="clr-namespace:Xamarin.Behaviors;assembly=Xamarin.Behaviors"
-             xmlns:usercontrols="clr-namespace:App.Mobile.Droid.Controls;assembly=App.Mobile.Android" 
+			 xmlns:usercontrols="clr-namespace:App3.core.tshirt.Controls"
              BackgroundColor="{StaticResource BackgroundPhone}"
              NavigationPage.HasNavigationBar="False">
 
@@ -44,37 +44,11 @@
 						<RowDefinition Height="45"/>
 					</Grid.RowDefinitions>
 
-					<!--<Label x:Name="tbOc" Grid.Row="0" Grid.Column="0" Text="O/C:" VerticalOptions="Center" HorizontalOptions="End" FontAttributes="Bold" TextColor="{StaticResource TextColor}" />-->
-
-
-					<!--<usercontrols:BindablePicker x:Name="PickerOrders" Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="3"
-                                                                ItemsSource="{Binding OrdercodesCollection}" 
-                                                                SelectedItem="{Binding OrderSelect}"
-                                                                WidthRequest="150" 
-                                                                VerticalOptions="CenterAndExpand" 
-                                                                HorizontalOptions="Start" 
-                                                                BackgroundColor="{StaticResource TextColor}" 
-                                                                TextColor="White" />-->
-
-					<!--<usercontrols:BindablePicker x:Name="PickerWarehouseInit" Grid.Row="0" Grid.Column="1" 
-                                                                     ItemsSource="{Binding WarehouseCollection }" 
-                                                                     SelectedItem="{Binding WarehouseSelect, Mode=TwoWay}"
-                                                                     WidthRequest="150" 
-                                                                     VerticalOptions="CenterAndExpand" 
-                                                                     HorizontalOptions="Center" 
-                                                                     BackgroundColor="{StaticResource TextColor}" 
-                                                                     TextColor="White">
-                         <b:Interaction.Behaviors>
-                            <b:BehaviorCollection>
-                                <b:EventToCommand  EventName="ItemSelected"  Command="{Binding PickerSelect}"/>
-                            </b:BehaviorCollection>
-                        </b:Interaction.Behaviors>
-                    </usercontrols:BindablePicker>-->
-
 					<Image WidthRequest="35" Grid.Row="0" Grid.Column="1"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="End" Source="Images/warehouse.png" ></Image>
-					<Picker x:Name="PickerWarehouseInit" Grid.Row="0" Grid.Column="2"
+					<!--<Picker x:Name="PickerWarehouseInit" Grid.Row="0" Grid.Column="2"
                             ItemsSource="{Binding WarehouseCollection }"
-                            SelectedItem="{Binding WarehouseSelect, Mode=TwoWay}" WidthRequest="200" 
+                            SelectedItem="{Binding WarehouseSelect, Mode=TwoWay}" 
+					        WidthRequest="200" 
                             VerticalOptions="CenterAndExpand" 
                             HorizontalOptions="Center" 
                             BackgroundColor="{StaticResource TextColor}" 
@@ -84,8 +58,22 @@
 								<b:EventToCommand  EventName="SelectedIndexChanged"  Command="{Binding PickerSelect}"/>
 							</b:BehaviorCollection>
 						</b:Interaction.Behaviors>
-					</Picker>
-
+					</Picker>-->
+					<usercontrols:BindablePicker x:Name="PickerWarehouseInit" Grid.Row="0" Grid.Column="2"
+                                                                ItemsSource="{Binding WarehouseCollection}"                         
+                                                                SelectedItem="{Binding WarehouseSelect, Mode=TwoWay}"
+                                                                WidthRequest="200" 
+                                                                VerticalOptions="CenterAndExpand" 
+                                                                HorizontalOptions="Center" 
+                                                                BackgroundColor="{StaticResource TextColor}" 
+                                                                TextColor="White">
+						<b:Interaction.Behaviors>
+							<b:BehaviorCollection>
+								<b:EventToCommand  EventName="SelectedIndexChanged"  Command="{Binding PickerSelect}"/>
+							</b:BehaviorCollection>
+						</b:Interaction.Behaviors>
+					</usercontrols:BindablePicker>
+					
 					<Image WidthRequest="35" Grid.Row="1" Grid.Column="1"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="End" Source="Images/Lote.png" ></Image>
 					<Entry x:Name="entLote" Grid.Row="1" Grid.Column="2" Text="{Binding Lote}" Placeholder="Lote" WidthRequest="200" HeightRequest="35" HorizontalOptions="Start"></Entry>
 

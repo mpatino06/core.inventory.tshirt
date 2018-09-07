@@ -6,12 +6,12 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows.Input;
-using App.Mobile.Droid.Models;
-using App.Mobile.Droid.Services;
 using GalaSoft.MvvmLight.Command;
-using App.Mobile.Droid.Infrastructure;
-using App.Mobile.Droid.Pages.WarehouseTransfer;
 using Xamarin.Forms;
+using App3.core.tshirt.Services;
+using App3.core.tshirt.Models;
+using App3.core.tshirt.Views.TransferWarehouse;
+using App3.core.tshirt.Infrastructure;
 
 namespace App3.core.tshirt.ViewModels
 {

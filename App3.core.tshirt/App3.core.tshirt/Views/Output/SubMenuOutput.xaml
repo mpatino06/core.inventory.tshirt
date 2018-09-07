@@ -1,40 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="App3.core.tshirt.Views.MainMenu"
+             x:Class="App3.core.tshirt.Views.Output.SubMenuOutput"  
 			 BackgroundColor="{StaticResource BackgroundPhone}"
              NavigationPage.HasNavigationBar="False">
-
 	<StackLayout>
-
 		<Grid  BackgroundColor="{StaticResource TextColor}" Margin="0,0.333,0,594.667">
 			<Grid.ColumnDefinitions>
 				<ColumnDefinition Width="45" />
 				<ColumnDefinition Width="*" />
-				<ColumnDefinition Width="45" />
 			</Grid.ColumnDefinitions>
 			<Grid.RowDefinitions>
 				<RowDefinition Height="45"/>
 				<RowDefinition Height="Auto"/>
 			</Grid.RowDefinitions>
 
-			<Image WidthRequest="30" HeightRequest="30" VerticalOptions="Center" HorizontalOptions="Center" Source="menuback.png" ></Image>
-			<Label Text="Inventory Mobile" Grid.Row="0" FontSize="14"  Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" FontAttributes="Bold" ></Label>
-			<Image WidthRequest="35" Grid.Row="0" Grid.Column="2"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Start" Source="settings.png" >
-				<Image.GestureRecognizers>
-					<TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped"/>
-				</Image.GestureRecognizers>
-			</Image>
+			<Image WidthRequest="30" HeightRequest="30" VerticalOptions="Center" HorizontalOptions="Center" Source="salida.png" ></Image>
+			<Label Text="     Salida a Producción" Grid.Row="0" FontSize="14"  Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" FontAttributes="Bold" ></Label>
+
 
 
 			<ListView x:Name="ListMenu" 
                           Margin="0,-10,0,0"  
-                          Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" 
+                          Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" 
                           BackgroundColor="{StaticResource BackgroundPhone}"
                           HasUnevenRows="True"  
                           HorizontalOptions="Fill" 
-                          VerticalOptions="Fill"
-                          ItemTapped="Handle_ItemTapped">
+                          VerticalOptions="Center"
+                          ItemTapped="Handle_ItemTapped"
+                          ItemsSource="{Binding Menu}">
 				<ListView.ItemTemplate>
 					<DataTemplate>
 						<ViewCell>
@@ -48,8 +42,8 @@
 									<ColumnDefinition Width="*"></ColumnDefinition>
 								</Grid.ColumnDefinitions>
 								<Image
-                                        WidthRequest="50"
-                                        HeightRequest="45" 
+                                        WidthRequest="40"
+                                        HeightRequest="40" 
                                         Source="{Binding Icon}"
                                         Margin="25,0,0,0">
 								</Image>
@@ -67,9 +61,6 @@
 				</ListView.ItemTemplate>
 			</ListView>
 
-
 		</Grid>
-
-
 	</StackLayout>
 </ContentPage>

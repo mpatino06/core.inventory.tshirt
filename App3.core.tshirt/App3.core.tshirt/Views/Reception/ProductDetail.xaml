@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="App3.core.tshirt.Views.Reception.ProductDetail"
 			 xmlns:b="clr-namespace:Xamarin.Behaviors;assembly=Xamarin.Behaviors"
-             xmlns:usercontrols="clr-namespace:App.Mobile.Droid.Controls" 
+			 xmlns:usercontrols="clr-namespace:App3.core.tshirt.Controls"
              BackgroundColor="{StaticResource BackgroundPhone}"
              NavigationPage.HasNavigationBar="False">
 	<ScrollView>

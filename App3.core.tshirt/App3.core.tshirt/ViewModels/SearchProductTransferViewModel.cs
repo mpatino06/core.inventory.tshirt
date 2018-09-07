@@ -6,10 +6,10 @@ using System.Linq;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows.Input;
-using App.Mobile.Droid.Models;
+using App3.core.tshirt.Infrastructure;
+using App3.core.tshirt.Models;
+using App3.core.tshirt.Services;
 using GalaSoft.MvvmLight.Command;
-using App.Mobile.Droid.Infrastructure;
-using App.Mobile.Droid.Services;
 using Xamarin.Forms;
 
 namespace App3.core.tshirt.ViewModels
@@ -73,7 +73,7 @@ namespace App3.core.tshirt.ViewModels
                 return new Command((e) =>
                 {
                     var item = (e as TransferDetail);
-                    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.WarehouseTransfer.Detail(int.Parse(item.Id)));
+                    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Views.TransferWarehouse.Detail(int.Parse(item.Id)));
                 });
             }
         }

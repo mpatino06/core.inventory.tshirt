@@ -10,7 +10,7 @@
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>App3.core.tshirt.Droid</RootNamespace>
-    <AssemblyName>App3.core.tshirt.Android</AssemblyName>
+    <AssemblyName>Inventory Mobile</AssemblyName>
     <FileAlignment>512</FileAlignment>
     <AndroidApplication>true</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.Designer.cs</AndroidResgenFile>

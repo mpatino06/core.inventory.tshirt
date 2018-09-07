@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
 using System.Text;
-using App.Mobile.Droid.Models;
-
+using App3.core.tshirt.Models;
 
 namespace App3.core.tshirt.ViewModels
 {

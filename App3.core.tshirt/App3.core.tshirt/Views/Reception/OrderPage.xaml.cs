@@ -3,7 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using App3.core.tshirt.Models;
+using App3.core.tshirt.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 

@@ -41,6 +41,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\WarehouseProduct.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\CountServices.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\OrderService.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\OutputServices.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\ProductChangeServices.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\ProductServices.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\ProductTransferServices.cs" />
@@ -49,6 +50,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Services\SyncServices.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\UserServices.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\WarehouseServices.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Services\XmlServices.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CountDetailViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CountResumeViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CountViewModel.cs" />
@@ -119,6 +121,22 @@
       <DependentUpon>Details.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Output\ListOutput.xaml.cs">
+      <DependentUpon>ListOutput.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Output\OutputProducts.xaml.cs">
+      <DependentUpon>OutputProducts.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Output\ResultOutput.xaml.cs">
+      <DependentUpon>ResultOutput.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\Output\SubMenuOutput.xaml.cs">
+      <DependentUpon>SubMenuOutput.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\Reception\OderList.xaml.cs">
       <DependentUpon>OderList.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -137,6 +155,30 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Views\Reception\Search.xaml.cs">
       <DependentUpon>Search.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TransferWarehouse\Detail.xaml.cs">
+      <DependentUpon>Detail.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TransferWarehouse\List.xaml.cs">
+      <DependentUpon>List.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TransferWarehouse\ProductsTransfer.xaml.cs">
+      <DependentUpon>ProductsTransfer.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TransferWarehouse\Result.xaml.cs">
+      <DependentUpon>Result.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TransferWarehouse\SubMenu.xaml.cs">
+      <DependentUpon>SubMenu.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Views\TransferWarehouse\Warehouses.xaml.cs">
+      <DependentUpon>Warehouses.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -248,6 +290,66 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Output\Details.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Output\SubMenuOutput.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Output\ListOutput.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Output\OutputProducts.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\Output\ResultOutput.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\TransferWarehouse\Detail.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\TransferWarehouse\SubMenu.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\TransferWarehouse\List.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\TransferWarehouse\ProductsTransfer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\TransferWarehouse\Warehouses.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Views\TransferWarehouse\Result.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

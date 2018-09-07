@@ -5,12 +5,11 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Windows.Input;
-using App.Mobile.Droid.Models;
-using App.Mobile.Droid.Services;
 using GalaSoft.MvvmLight.Command;
-using App.Mobile.Droid.Infrastructure;
-using App.Mobile.Droid.Pages.Reception;
-
+using App3.core.tshirt.Infrastructure;
+using App3.core.tshirt.Services;
+using App3.core.tshirt.Models;
+using App3.core.tshirt.Views.Reception;
 
 namespace App3.core.tshirt.ViewModels
 {

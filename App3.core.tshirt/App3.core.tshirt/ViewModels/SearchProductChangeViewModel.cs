@@ -5,11 +5,7 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows.Input;
-using App.Mobile.Droid.Models;
-using App.Mobile.Droid.Pages.Change;
-using App.Mobile.Droid.Infrastructure;
-using App.Mobile.Droid.Pages.Reception;
-using App.Mobile.Droid.Services;
+using App3.core.tshirt.Services;
 using Xamarin.Forms;
 
 namespace App3.core.tshirt.ViewModels
@@ -96,7 +92,7 @@ namespace App3.core.tshirt.ViewModels
                 return new Command((e) =>
                 {
                     var item = (e as Models.OrderReqDetailExtend);
-                    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Change.DetailChangeP(item.OrderReqCode.ToString()));
+                    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Views.Change.DetailChangeP(item.OrderReqCode.ToString()));
                 });
             }
         }

@@ -5,9 +5,9 @@ using System.ComponentModel;
 using System.Runtime.CompilerServices;
 using System.Text;
 using System.Windows.Input;
-using App.Mobile.Droid.Services;
+using App3.core.tshirt.Infrastructure;
+using App3.core.tshirt.Services;
 using GalaSoft.MvvmLight.Command;
-using App.Mobile.Droid.Infrastructure;
 using Xamarin.Forms;
 
 namespace App3.core.tshirt.ViewModels
@@ -69,7 +69,7 @@ namespace App3.core.tshirt.ViewModels
                 return new Command((e) =>
                 {
                     var item = (e as Models.Output);
-                    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Pages.Output.Details(item.Id));
+                    Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Views.Output.Details(item.Id));
                 });
             }
         }

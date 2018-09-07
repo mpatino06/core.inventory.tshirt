@@ -3,25 +3,24 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using App3.core.tshirt.Models;
 using App3.core.tshirt.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace App3.core.tshirt.Views.Reception
+namespace App3.core.tshirt.Views.TransferWarehouse
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Rct : ContentPage
+	public partial class List : ContentPage
 	{
-		public Rct(string ordercode, RctExtendModel rct)
+		public List()
 		{
 			InitializeComponent();
-			BindingContext = new RctViewModel(ordercode, rct);
+			BindingContext = new SearchProductTransferViewModel();
 		}
 
 		private void OnTapGestureRecognizerTapped(object sender, EventArgs e)
 		{
-			Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new MainMenu(string.Empty));
+			Xamarin.Forms.Application.Current.MainPage.Navigation.PopAsync();
 		}
 	}
 }
