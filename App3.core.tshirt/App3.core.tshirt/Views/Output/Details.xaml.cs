@@ -24,6 +24,7 @@ namespace App3.core.tshirt.Views.Output
 			Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new SubMenuOutput());
 		}
 
+
 		public void ButtonBackClick()
 		{
 			Xamarin.Forms.Application.Current.MainPage.Navigation.PopAsync();
