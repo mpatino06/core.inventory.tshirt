@@ -1,0 +1,2 @@
+android.app.Application
+Inventory_Mobile.Inventory_Mobile
