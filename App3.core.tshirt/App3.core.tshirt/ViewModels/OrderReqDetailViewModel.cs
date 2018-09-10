@@ -10,6 +10,7 @@ using  System.Diagnostics;
 using App3.core.tshirt.Services;
 using App3.core.tshirt.Models;
 using App3.core.tshirt.Views.Change;
+using System.Linq;
 
 namespace App3.core.tshirt.ViewModels
 {
@@ -161,19 +162,27 @@ namespace App3.core.tshirt.ViewModels
             items.Observation = Observation;
 
 
-            var answer = await App.Current.MainPage.DisplayAlert("TSHIRT", "Desea Guardar Cambio de Productos?", "SI", "NO");
-            if (answer)
-            {
-                result = await services.UpdateOrder(items);
-                if (result)
-                {
-                    await Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new ResultChangeP());
-                }
-                else
-                    App.Current.MainPage.DisplayAlert("TSHIRT", "Error guardando registro", "OK");
+			var quantityChanged = Details.Any(a => a.QuantityChanged > 0);
+			if (!quantityChanged)
+			{
+				App.Current.MainPage.DisplayAlert("TSHIRT", "No se ha cambiado ningun producto", "OK");
+			}
+			else {
 
-            }
+				var answer = await App.Current.MainPage.DisplayAlert("TSHIRT", "Desea Guardar Cambio de Productos?", "SI", "NO");
+				if (answer)
+				{
+					result = await services.UpdateOrder(items);
+					if (result)
+					{
+						await Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new ResultChangeP());
+					}
+					else
+						App.Current.MainPage.DisplayAlert("TSHIRT", "Error guardando registro", "OK");
 
+				}
+
+			}
         }
 
 

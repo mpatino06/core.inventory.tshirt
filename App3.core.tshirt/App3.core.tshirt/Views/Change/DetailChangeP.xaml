@@ -20,8 +20,8 @@
 					<RowDefinition Height="Auto"/>
 				</Grid.RowDefinitions>
 
-				<Image WidthRequest="35" Grid.Row="0" Grid.Column="0"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Source="Images/cambioItem.png" Margin="5"></Image>
-				<Label x:Name="EntProveedor" Text="Cambio Producto" Grid.Row="0" FontSize="14"  Grid.Column="1"  HorizontalOptions="Start" VerticalOptions="Center" FontAttributes="Bold" ></Label>
+				<Image WidthRequest="35" Grid.Row="0" Grid.Column="0"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Source="cambio.png" Margin="5"></Image>
+				<Label x:Name="EntProveedor" Text="Cambio Producto" Grid.Row="0" FontSize="Default"  Grid.Column="1"  HorizontalOptions="Start" VerticalOptions="Center" FontAttributes="Bold" ></Label>
 				<Image WidthRequest="35" Grid.Row="0" Grid.Column="2"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Source="Images/Menu.png" >
 					<Image.GestureRecognizers>
 						<TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped"/>

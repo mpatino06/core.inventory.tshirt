@@ -21,5 +21,7 @@ namespace App3.core.tshirt.Views.TransferWarehouse
 		{
 			Xamarin.Forms.Application.Current.MainPage.Navigation.PushAsync(new Warehouses());
 		}
+
+
 	}
 }

@@ -19,15 +19,15 @@
 					<RowDefinition Height="Auto"/>
 				</Grid.RowDefinitions>
 
-				<Image WidthRequest="35" Grid.Row="0" Grid.Column="0"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Source="Images/warehousetranferItem.png" Margin="5"></Image>
-				<Label Text="     Tranferencia entre Bodegas" Grid.Row="0" FontSize="14"  Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" FontAttributes="Bold"></Label>
+				<Image WidthRequest="35" Grid.Row="0" Grid.Column="0"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Source="transferencia.png" Margin="5"></Image>
+				<Label Text="     Tranferencia entre Bodegas" Grid.Row="0" FontSize="Default"  Grid.Column="1" HorizontalOptions="Start" VerticalOptions="Center" FontAttributes="Bold"></Label>
 				<Image WidthRequest="35" Grid.Row="0" Grid.Column="2"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Source="Images/Menu.png" >
 					<Image.GestureRecognizers>
 						<TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped"/>
 					</Image.GestureRecognizers>
 				</Image>
 
-				<Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Margin="10,0,0,0"  BackgroundColor="{StaticResource BackgroundPhone}" >
+				<Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3"  BackgroundColor="{StaticResource BackgroundPhone}" >
 					<Grid.ColumnDefinitions>
 						<ColumnDefinition Width="45" />
 						<ColumnDefinition Width="Auto" />
@@ -45,7 +45,7 @@
 						<RowDefinition Height="Auto"/>
 					</Grid.RowDefinitions>
 
-					<Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3">
+					<Grid Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" Margin="10,0,0,0">
 						<Grid.ColumnDefinitions>
 							<ColumnDefinition Width="60" />
 							<ColumnDefinition Width="*" />
@@ -53,16 +53,13 @@
 						<Grid.RowDefinitions>
 							<RowDefinition Height="Auto"/>
 							<RowDefinition Height="Auto"/>
-
 						</Grid.RowDefinitions>
 						<Label Grid.Row="0" Grid.Column="0" Text="Origen" HorizontalOptions="Start" VerticalOptions="Center" TextColor="{StaticResource TextColor}" FontAttributes="Bold" FontSize="14"/>
 						<Label Grid.Row="0" Grid.Column="1" Text="{Binding WarehouseOriginSelect}" VerticalOptions="Center" HorizontalOptions="Start" TextColor="Black" />
 
 						<Label Grid.Row="1" Grid.Column="0" Text="Destino" VerticalOptions="Center" HorizontalOptions="Start"  FontAttributes="Bold" TextColor="{StaticResource TextColor}" FontSize="14"/>
 						<Label Grid.Row="1" Grid.Column="1" Text="{Binding WarehouseDestinySelect}" VerticalOptions="Center" HorizontalOptions="Start" TextColor="Black" />
-
 					</Grid>
-
 
 					<Image WidthRequest="35" Grid.Row="3" Grid.Column="0"  HeightRequest="50" VerticalOptions="Center" HorizontalOptions="End" Source="Images/barcode.png" ></Image>
 					<Entry x:Name="EntProducto" Grid.Row="3" Grid.Column="1" Text="{Binding ProductCode}" Placeholder="Codigo Producto" HeightRequest="50" WidthRequest="200" HorizontalOptions="Start"   >

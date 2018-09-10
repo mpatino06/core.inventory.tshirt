@@ -1,7 +1,7 @@
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Debug\Inventory Mobile.dll
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Debug\Inventory Mobile.pdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Debug\Inventory_Mobile.Inventory_Mobile.apk
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Debug\Inventory_Mobile.Inventory_Mobile-Signed.apk
+E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Debug\I_M_Tshirt.I_M_Tshirt.apk
+E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Debug\I_M_Tshirt.I_M_Tshirt-Signed.apk
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Debug\CommonServiceLocator.dll
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Debug\FormsViewGroup.dll
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Debug\GalaSoft.MvvmLight.dll
@@ -41,7 +41,6 @@ E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Debug\Xamarin.Forms.Xaml.pdb
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Debug\Xamarin.Forms.Xaml.xml
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Debug\Xamarin.Forms.Xaml.dll.mdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\App3.core.tshirt.Android.csprojAssemblyReference.cache
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\res.flag
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\App3.core.tshirt.Android.csproj.CoreCompileInputs.cache
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\App3.core.tshirt.Droid.MainPage.xaml.g.cs
@@ -76,7 +75,7 @@ E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\App3.core.tshirt.Android.csproj.CopyComplete
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\Inventory Mobile.dll
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\Inventory Mobile.pdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\bin\Inventory_Mobile.Inventory_Mobile.apk
+E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\bin\I_M_Tshirt.I_M_Tshirt.apk
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\res\drawable\icon.png
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\res\layout\tabbar.xml
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\res\layout\toolbar.xml
