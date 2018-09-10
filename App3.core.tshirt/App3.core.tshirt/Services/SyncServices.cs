@@ -15,7 +15,7 @@ namespace App3.core.tshirt.Services
 		{
 			client = new HttpClient();
 			client.MaxResponseContentBufferSize = 2560000;
-			PATHSERVER = "10.1.92.207:83";
+			PATHSERVER = "10.1.92.207:81";
 		}
 
 		public async Task<bool> Execute(string processName)

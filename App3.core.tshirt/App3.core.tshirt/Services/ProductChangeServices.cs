@@ -19,7 +19,7 @@ namespace App3.core.tshirt.Services
 		{
 			client = new HttpClient();
 			client.MaxResponseContentBufferSize = 2560000;
-			PATHSERVER = "10.1.92.207:83"; // Resources.PathServer;
+			PATHSERVER = "10.1.92.207:81"; // Resources.PathServer;
 		}
 
 		public async Task<OrderReqExtend> GetDetailByCode(string code)

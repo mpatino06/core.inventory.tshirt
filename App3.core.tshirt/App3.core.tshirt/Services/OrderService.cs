@@ -19,7 +19,7 @@ namespace App3.core.tshirt.Services
 			client = new HttpClient();
 			client.MaxResponseContentBufferSize = 25600000;
 
-			PATHSERVER = "10.1.92.207:83";
+			PATHSERVER = "10.1.92.207:81";
 		}
 
 		public async Task<List<OrderTShirt>> GetOrderProviders(string codeProvider)
