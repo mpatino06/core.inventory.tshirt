@@ -189,6 +189,7 @@ E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Debug\System.ServiceModel.Internals.dll.mdb
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Debug\System.Xml.dll.mdb
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Debug\System.Xml.Linq.dll.mdb
+E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Debug\Inventory Mobile.dll
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\linksrc\Microsoft.CSharp.pdb
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\linksrc\Mono.Android.pdb
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\linksrc\mscorlib.pdb
@@ -211,26 +212,3 @@ E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\linksrc\Xamarin.Forms.Core.dll.mdb
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\linksrc\Xamarin.Forms.Platform.Android.dll.mdb
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\linksrc\Xamarin.Forms.Xaml.dll.mdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Debug\Inventory Mobile.dll.mdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\FormsViewGroup.dll.mdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\GalaSoft.MvvmLight.dll.mdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\GalaSoft.MvvmLight.Extras.dll.mdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\GalaSoft.MvvmLight.Platform.dll.mdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\Inventory Mobile.dll.mdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\Xamarin.Forms.Core.dll.mdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\Xamarin.Forms.Platform.Android.dll.mdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\Xamarin.Forms.Xaml.dll.mdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\Microsoft.CSharp.pdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\Mono.Android.pdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\Mono.Security.pdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\mscorlib.pdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\System.ComponentModel.Composition.pdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\System.Core.pdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\System.IO.Compression.pdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\System.Net.Http.pdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\System.Numerics.pdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\System.pdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\System.Runtime.Serialization.pdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\System.ServiceModel.Internals.pdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\System.Xml.Linq.pdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Debug\MonoAndroid90\android\assets\System.Xml.pdb

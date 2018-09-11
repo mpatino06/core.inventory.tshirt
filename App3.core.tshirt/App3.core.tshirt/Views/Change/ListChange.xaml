@@ -4,7 +4,6 @@
              x:Class="App3.core.tshirt.Views.Change.ListChange" 
 			 xmlns:b="clr-namespace:Xamarin.Behaviors;assembly=Xamarin.Behaviors"
 			 BackgroundColor="{StaticResource BackgroundPhone}"
-             x:Name="PageOutputList"
              NavigationPage.HasNavigationBar="False">
 	<ScrollView>
 		<StackLayout>
@@ -19,7 +18,7 @@
 					<RowDefinition Height="Auto"/>
 				</Grid.RowDefinitions>
 				<Image WidthRequest="35" Grid.Row="0" Grid.Column="0"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Source="cambio.png" Margin="5"></Image>
-				<Label x:Name="EntProveedor" Text="Cambio de Producto - Listado" Grid.Row="0" FontSize="14"  Grid.Column="1"  HorizontalOptions="Start" VerticalOptions="Center" FontAttributes="Bold" ></Label>
+				<Label x:Name="EntProveedor" Text="Cambio de Producto - Listado" Grid.Row="0" FontSize="Default"  Grid.Column="1"  HorizontalOptions="Start" VerticalOptions="Center" FontAttributes="Bold" ></Label>
 				<Image WidthRequest="35" Grid.Row="0" Grid.Column="2"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="Center" Source="menuback.png" >
 					<Image.GestureRecognizers>
 						<TapGestureRecognizer Tapped="OnTapGestureRecognizerTapped"/>
@@ -56,15 +55,21 @@
 						</Image.GestureRecognizers>
 					</Image>
 
-					<Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4"  
+										
+					<Grid Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="4"  Margin="0,20,0,0"
                 BackgroundColor="{StaticResource BackgroundPhone}" HorizontalOptions="Center">
 						<Grid.RowDefinitions>
 							<RowDefinition Height="Auto"/>
+							<RowDefinition Height="Auto"/>
+							<RowDefinition Height="Auto"/>
 						</Grid.RowDefinitions>
 
+						<Label Grid.Row="0" Text="{Binding SearchUser}" Margin="10,0,0,0" HorizontalOptions="Start" VerticalOptions="StartAndExpand" TextColor="{StaticResource TextColor}" FontSize="12" FontAttributes="Bold"/>
+						<Label Grid.Row="1" Text="{Binding SearchDate}" Margin="10,0,0,0" HorizontalOptions="Start" VerticalOptions="StartAndExpand" TextColor="{StaticResource TextColor}" FontSize="12" FontAttributes="Bold"/>
+						
 						<ListView x:Name="ListCount" Margin="10,0,0,0"
-              ItemsSource="{Binding ProductChangeCollection}"
-              Grid.Row="0"          
+              ItemsSource="{Binding ListSearchCollection}"
+              Grid.Row="2"          
               HasUnevenRows="true"                          
               HorizontalOptions="Center" VerticalOptions="Start" 
               BackgroundColor="{StaticResource BackgroundPhone}" 
@@ -74,46 +79,43 @@
 									<ViewCell>
 										<Grid Padding="5" HorizontalOptions="Fill">
 											<Grid.RowDefinitions>
-												<RowDefinition Height="35"/>
-												<RowDefinition Height="35"/>
+												<RowDefinition Height="30"/>
+												<RowDefinition Height="30"/>
 											</Grid.RowDefinitions>
 											<Grid.ColumnDefinitions>
-												<ColumnDefinition Width="8*" />
-												<ColumnDefinition Width="2*" />
-												<!--<ColumnDefinition Width="4*" />-->
-												<!--<ColumnDefinition Width="2*" />-->
+												<ColumnDefinition Width="8.5*" />
+												<ColumnDefinition Width="1.5*" />
 											</Grid.ColumnDefinitions>
+
 											<Label Grid.Row="0"  
                                                 Grid.Column="0" 
                         VerticalOptions="Center" 
                         HorizontalOptions="Start"
                         TextColor="Green" 
                         FontSize="10"
-                        Text="{Binding ProductName}" >
-
+                        Text="{Binding Product}" >
 											</Label>
-											<Label Grid.Row="0"  
-                                                Grid.Column="1" 
+											<Label Grid.Row="1"  
+                                                Grid.Column="0" 
                         VerticalOptions="Center" 
                         HorizontalOptions="Start" 
-                        FontSize="12"
-                        Text="{Binding OrderReqCode}" >
-
-											</Label>
-											<Label  Grid.Row="1"
-                                                    Grid.Column="0" 
-                        VerticalOptions="Center"
-                        HorizontalOptions="StartAndExpand"
-                        TextColor="Black" 
                         FontSize="10"
-                        Text="{Binding ProductNameChanged}" ></Label>
+                        Text="{Binding ProductChanged}" >
+											</Label>
+											<Label  Grid.Row="0" Grid.RowSpan="2" 
+                                                    Grid.Column="1" 
+                        VerticalOptions="Center"
+                        HorizontalOptions="Center"
+                        TextColor="Red" 
+                        FontSize="Default"
+                        Text="{Binding Quantity}" ></Label>
 											<!--<Label  Grid.Column="2" 
                         VerticalOptions="Center" 
                         HorizontalOptions="StartAndExpand"
                         TextColor="Black" 
                         FontSize="10"
                         Text="{Binding Observation}" ></Label>-->
-											<Button Grid.Row="1" 
+											<!--<Button Grid.Row="1" 
                                                     Grid.Column="1" 
                         VerticalOptions="Center" 
                         HorizontalOptions="Center"
@@ -121,7 +123,7 @@
                         WidthRequest="70"
                         Text="Ver >"
                         Command="{Binding Path=BindingContext.DetailCommand, Source={x:Reference PageOutputList}}"
-                        CommandParameter="{Binding .}"></Button>
+                        CommandParameter="{Binding .}"></Button>-->
 										</Grid>
 									</ViewCell>
 								</DataTemplate>

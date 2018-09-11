@@ -1,2 +1,0 @@
-android.app.Application
-I_M_Tshirt.I_M_Tshirt

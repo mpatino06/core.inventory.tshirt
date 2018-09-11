@@ -20,6 +20,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)Models\CountPlan.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\CountPlanDetail.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\CountPlanDetailItem.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Models\ListSearchProduct.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\OrderDetail.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\OrderDetailExtend.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Models\OrderDetailProduct.cs" />
