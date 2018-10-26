@@ -45,6 +45,7 @@
 					</Grid.RowDefinitions>
 
 					<Image WidthRequest="35" Grid.Row="0" Grid.Column="1"  HeightRequest="35" VerticalOptions="Center" HorizontalOptions="End" Source="Images/warehouse.png" ></Image>
+					
 					<!--<Picker x:Name="PickerWarehouseInit" Grid.Row="0" Grid.Column="2"
                             ItemsSource="{Binding WarehouseCollection }"
                             SelectedItem="{Binding WarehouseSelect, Mode=TwoWay}" 
@@ -59,6 +60,7 @@
 							</b:BehaviorCollection>
 						</b:Interaction.Behaviors>
 					</Picker>-->
+					
 					<usercontrols:BindablePicker x:Name="PickerWarehouseInit" Grid.Row="0" Grid.Column="2"
                                                                 ItemsSource="{Binding WarehouseCollection}"                         
                                                                 SelectedItem="{Binding WarehouseSelect, Mode=TwoWay}"

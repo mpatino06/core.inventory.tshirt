@@ -21,12 +21,12 @@ namespace App3.core.tshirt.Views.Count
 			_user = user;
 			InitializeComponent();
 			countServices = new CountServices();
-			BindingContext = new CountViewModel(null, user);
+			BindingContext = new CountViewModel1(null, user);
 		}
 
 		private async void ListCount_OnItemSelected(object sender, SelectedItemChangedEventArgs e)
 		{
-			CountViewModel viewModel = sender as CountViewModel;
+			CountViewModel1 viewModel = sender as CountViewModel1;
 			if (e.SelectedItem == null)
 			{
 				return;

@@ -12,9 +12,8 @@ namespace App3.core.tshirt
 		public App ()
 		{
 			InitializeComponent();
-
-			//MainPage = new MainMenu("Miguel Patiño");
-			MainPage = new NavigationPage(new MainMenu("Miguel Patiño"));
+			MainPage = new NavigationPage(new MainMenu("USER P01"));
+			//MainPage = new NavigationPage(new Login());
 		}
 
 		protected override void OnStart ()

@@ -44,7 +44,6 @@ namespace App3.core.tshirt.Services
 			return items;
 		}
 
-
 		public async Task<OrderReqExtend> GetOrderByCode(string code)
 		{
 			var items = new OrderReqExtend();
@@ -66,7 +65,6 @@ namespace App3.core.tshirt.Services
 			return items;
 		}
 
-
 		public async Task<List<OrderReqDetailExtend>> GetAll()
 		{
 			var items = new List<OrderReqDetailExtend>();
@@ -87,7 +85,6 @@ namespace App3.core.tshirt.Services
 			}
 			return items;
 		}
-
 
 		//Tuple permite devolver en un metodo dos resultados
 		public async Task<Tuple<List<OrderReqExtend>, int>> GetAllWeb(int aPage, int aElementsPerPage, string aSearchString)
@@ -173,7 +170,6 @@ namespace App3.core.tshirt.Services
 
 		public async Task<List<OrderReqDetailExtend>> GetListDetailByCode(string code)
 		{
-
 			var items = new List<OrderReqDetailExtend>();
 			string url = "http://" + PATHSERVER + "/tshirt/productchange/GetListDetailByCode?code=";
 			string uri = string.Concat(url, code);
@@ -185,9 +181,6 @@ namespace App3.core.tshirt.Services
 					var content = await result.Content.ReadAsStringAsync();
 					items = JsonConvert.DeserializeObject<List<OrderReqDetailExtend>>(content);
 				}
-
-				//var stringContent = "[{'Id': 1,'OrderReqCode': '00078389','Observation': '','ProductCode': 'GDC3730U0237A62','ProductCodeChanged': 'GDC3730U0237A64','Quantity': 1,'DateProductChanged': '10 / 09 / 2018 10:41','UserUpdated': 'Miguel Patiño','ProductName': 'T - SHIRT REGULAR GILDAN 5000 - VERDE MILITAR - S','ProductNameChanged': 'T - SHIRT REGULAR GILDAN 5000 - VERDE MILITAR - L','QuantityChanged': 1,'Warehouse': 'BOD - CERO'},{'Id': 2,'OrderReqCode': '00078389','Observation': '','ProductCode': 'GDC3730U0237A63','ProductCodeChanged': 'GDC3730U0237A65','Quantity': 1,'DateProductChanged': '10 / 09 / 2018 10:44','UserUpdated': 'Miguel Patiño','ProductName': 'T - SHIRT REGULAR GILDAN 5000 - VERDE MILITAR - M','ProductNameChanged': 'T - SHIRT REGULAR GILDAN 5000 - VERDE MILITAR - XL','QuantityChanged': 1,'Warehouse': 'BOD - CERO'}]";
-				//items = JsonConvert.DeserializeObject<List<OrderReqDetailExtend>>(stringContent);
 			}
 			catch (Exception ex)
 			{

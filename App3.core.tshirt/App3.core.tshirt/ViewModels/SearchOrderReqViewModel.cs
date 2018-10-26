@@ -12,7 +12,6 @@ namespace App3.core.tshirt.ViewModels
 {
 	public class SearchOrderReqViewModel : INotifyPropertyChanged
 	{
-
 		public event PropertyChangedEventHandler PropertyChanged;
 
 

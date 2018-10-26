@@ -34,7 +34,7 @@ namespace App3.core.tshirt.Views.Count
 
 		void GetPlan()
 		{
-			BindingContext = new CountViewModel(_id, _user);
+			BindingContext = new CountViewModel1(_id, _user);
 		}
 
 
