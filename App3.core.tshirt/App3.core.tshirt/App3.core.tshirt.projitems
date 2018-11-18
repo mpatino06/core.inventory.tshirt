@@ -52,7 +52,6 @@
     <Compile Include="$(MSBuildThisFileDirectory)Services\UserServices.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\WarehouseServices.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Services\XmlServices.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CountViewModel1.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CountDetailViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CountResumeViewModel.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)ViewModels\CountViewModel.cs" />

@@ -41,7 +41,6 @@ E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Release\Xamarin.Forms.Xaml.pdb
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Release\Xamarin.Forms.Xaml.xml
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\bin\Release\Xamarin.Forms.Xaml.dll.mdb
-E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Release\MonoAndroid90\App3.core.tshirt.Android.csprojAssemblyReference.cache
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Release\MonoAndroid90\res.flag
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Release\MonoAndroid90\App3.core.tshirt.Android.csproj.CoreCompileInputs.cache
 E:\REPOSITORIOS\core.inventory.tshirt\App3.core.tshirt\App3.core.tshirt.Android\obj\Release\MonoAndroid90\App3.core.tshirt.Droid.MainPage.xaml.g.cs
